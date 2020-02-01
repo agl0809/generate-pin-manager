@@ -1,14 +1,15 @@
 import React from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+
 import './App.css';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
-import { generatePin } from 'generate-pin';
+import Generate from './generate/Generate';
 import Nav from './Nav';
 
 const App = () => {
   return (
     <div className="App">
       <Router>
-        <Nav></Nav>
+        <Nav />
         <Switch>
           <Route path="/Saved">
             <Saved />
@@ -21,13 +22,6 @@ const App = () => {
     </div>
   );
 };
-
-class Generate extends React.Component {
-  pins = generatePin(5).map(pin => <p>{pin}</p>);
-  render() {
-    return <header className="App-header">{this.pins}</header>;
-  }
-}
 
 const Saved = () => {
   return (
