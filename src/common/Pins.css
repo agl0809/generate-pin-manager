@@ -1,0 +1,12 @@
+.pins {
+  list-style-type: none;
+  text-align: left;
+  margin-right: 15px;
+}
+
+.pins li {
+  display: inline;
+  margin-right: 15px;
+  border: 1px solid gray;
+  padding: 10px;
+}
