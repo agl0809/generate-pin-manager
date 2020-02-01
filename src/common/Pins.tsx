@@ -4,7 +4,7 @@ import './Pins.css';
 const Pins = (props: any) => (
   <ul className="pins">
     {props.pins.map((pin: string) => (
-      <li>{pin}</li>
+      <li key={pin}>{pin}</li>
     ))}
   </ul>
 );

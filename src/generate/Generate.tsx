@@ -1,12 +1,22 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { generatePin } from 'generate-pin';
 import './Generate.css';
 import Pins from '../common/Pins';
 
 class Generate extends React.Component {
-  collection = generatePin(5);
+  readonly state = { pins: generatePin(5) };
+
+  setNewCollection = () => {
+    this.setState({ pins: generatePin(5) });
+  };
+
   render() {
-    return <Pins pins={this.collection}></Pins>;
+    return (
+      <Fragment>
+        <Pins pins={this.state.pins}></Pins>
+        <button onClick={this.setNewCollection}>GENERATE</button>
+      </Fragment>
+    );
   }
 }
 
