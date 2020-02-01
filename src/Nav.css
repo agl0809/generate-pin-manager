@@ -1,0 +1,10 @@
+.nav-menu {
+  list-style-type: none;
+  text-align: left;
+  margin-right: 15px;
+}
+
+.nav-menu li {
+  display: inline;
+  margin-right: 15px;
+}

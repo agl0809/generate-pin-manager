@@ -8,17 +8,6 @@
   pointer-events: none;
 }
 
-.App-menu {
-  list-style-type: none;
-  text-align: left;
-  margin-right: 15px;
-}
-
-.App-menu li {
-  display: inline;
-  margin-right: 15px;
-}
-
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
