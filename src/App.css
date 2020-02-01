@@ -1,10 +1,22 @@
 .App {
   text-align: center;
+  list-style: none;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.App-menu {
+  list-style-type: none;
+  text-align: left;
+  margin-right: 15px;
+}
+
+.App-menu li {
+  display: inline;
+  margin-right: 15px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
