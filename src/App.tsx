@@ -2,8 +2,8 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import './App.css';
-import Generate from './generate/Generate';
-import Nav from './Nav';
+import Generate from './Generate/Generate';
+import Nav from './Nav/Nav';
 
 const App = () => {
   return (

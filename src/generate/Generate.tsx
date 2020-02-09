@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import { generatePin } from 'generate-pin';
 import './Generate.css';
-import Pins from '../common/Pins';
+import Pins from '../Pins/Pins';
 
 class Generate extends React.Component {
   readonly state = { pins: generatePin(5) };
