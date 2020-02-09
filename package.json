@@ -14,8 +14,10 @@
     "generate-pin": "^1.0.5",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
+    "react-redux": "^7.1.3",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.3.1",
+    "redux": "^4.0.5",
     "typescript": "^3.7.5"
   },
   "scripts": {
@@ -44,6 +46,7 @@
   "devDependencies": {
     "cz-conventional-changelog": "^3.1.0",
     "prettier": "^1.19.1",
+    "redux-devtools": "^3.5.0",
     "tslint": "^6.0.0",
     "tslint-config-prettier": "^1.18.0"
   },

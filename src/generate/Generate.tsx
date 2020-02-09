@@ -6,7 +6,7 @@ import Pins from '../common/Pins';
 class Generate extends React.Component {
   readonly state = { pins: generatePin(5) };
 
-  setNewCollection = () => {
+  private setNewCollection = (e: React.MouseEvent) => {
     this.setState({ pins: generatePin(5) });
   };
 
@@ -15,6 +15,13 @@ class Generate extends React.Component {
       <Fragment>
         <Pins pins={this.state.pins}></Pins>
         <button onClick={this.setNewCollection}>GENERATE</button>
+        <button
+          onClick={() => {
+            return false;
+          }}
+        >
+          SAVE
+        </button>
       </Fragment>
     );
   }
